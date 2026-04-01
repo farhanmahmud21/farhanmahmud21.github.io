@@ -268,8 +268,16 @@
                 </div>
             </div>
             <div class="project-card" data-category="flutter">
-                <div class="project-image">
-                    <div class="project-placeholder"><i class="fas fa-weight"></i><span>BMI Calculator</span></div>
+                <div class="project-image carousel-container">
+                    <div class="phone-carousel" id="bmiCarousel">
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/bmi_calculator/main/image.png" alt="BMI Calculator 1"></div>
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/bmi_calculator/main/image-1.png" alt="BMI Calculator 2"></div>
+                        </div>
+                        <button class="carousel-btn carousel-prev" onclick="moveCarousel('bmiCarousel', -1)"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-btn carousel-next" onclick="moveCarousel('bmiCarousel', 1)"><i class="fas fa-chevron-right"></i></button>
+                        <div class="carousel-dots" id="bmiDots"></div>
+                    </div>
                     <div class="project-overlay"><div class="project-links"><a href="https://github.com/farhanmahmud21/bmi_calculator" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a></div></div>
                 </div>
                 <div class="project-info">
@@ -279,8 +287,16 @@
                 </div>
             </div>
             <div class="project-card" data-category="flutter api">
-                <div class="project-image">
-                    <div class="project-placeholder"><i class="fas fa-cloud-sun"></i><span>Weather App</span></div>
+                <div class="project-image carousel-container">
+                    <div class="phone-carousel" id="weatherCarousel">
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/weather_app/main/image.png" alt="Weather App 1"></div>
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/weather_app/main/image-1.png" alt="Weather App 2"></div>
+                        </div>
+                        <button class="carousel-btn carousel-prev" onclick="moveCarousel('weatherCarousel', -1)"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-btn carousel-next" onclick="moveCarousel('weatherCarousel', 1)"><i class="fas fa-chevron-right"></i></button>
+                        <div class="carousel-dots" id="weatherDots"></div>
+                    </div>
                     <div class="project-overlay"><div class="project-links"><a href="https://github.com/farhanmahmud21/weather_app" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a></div></div>
                 </div>
                 <div class="project-info">
