@@ -196,8 +196,8 @@ h1,h2,h3,h4,h5,h6 { font-family:var(--font-display); letter-spacing:-0.02em; }
 .project-placeholder { width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; background:linear-gradient(135deg, rgba(12,12,20,0.9), rgba(99,102,241,0.03)); }
 .project-placeholder i { font-size:40px; background:var(--gradient-primary); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
 .project-placeholder span { font-size:13px; color:var(--text-muted); }
-.project-overlay { position:absolute; inset:0; background:rgba(6,6,10,0.75); backdrop-filter:blur(4px); display:flex; align-items:center; justify-content:center; opacity:0; transition:var(--transition); }
-.project-card:hover .project-overlay { opacity:1; }
+.project-overlay { display:none; }
+
 .project-links { display:flex; gap:12px; }
 .project-link-btn { width:46px; height:46px; display:flex; align-items:center; justify-content:center; background:var(--primary); color:white; border-radius:12px; font-size:18px; transition:var(--transition); transform:translateY(16px); }
 .project-card:hover .project-link-btn { transform:translateY(0); }
@@ -333,3 +333,18 @@ h1,h2,h3,h4,h5,h6 { font-family:var(--font-display); letter-spacing:-0.02em; }
     .stat-number { font-size:30px; }
     .edu-card, .achievement-card { flex-direction:column; }
 }
+
+
+/* ===== Project Actions (GitHub btn + Private badge) ===== */
+.project-actions { margin-top:14px; display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+.github-btn { display:inline-flex; align-items:center; gap:6px; padding:8px 16px; background:rgba(255,255,255,0.04); border:1px solid var(--border-light); border-radius:8px; color:var(--text-secondary); font-size:12px; font-weight:600; transition:var(--transition); font-family:var(--font-body); }
+.github-btn:hover { background:var(--primary); color:white; border-color:var(--primary); transform:translateY(-1px); box-shadow:0 4px 16px rgba(99,102,241,0.25); }
+.github-btn i { font-size:14px; }
+.private-badge { display:inline-flex; align-items:center; gap:5px; padding:6px 14px; background:rgba(245,158,11,0.06); border:1px solid rgba(245,158,11,0.15); border-radius:8px; color:rgba(245,158,11,0.8); font-size:11px; font-weight:600; letter-spacing:0.3px; }
+.private-badge i { font-size:10px; }
+
+/* ===== Lenis Smooth Scroll ===== */
+html.lenis, html.lenis body { height:auto; }
+.lenis.lenis-smooth { scroll-behavior:auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior:contain; }
+.lenis.lenis-stopped { overflow:hidden; }

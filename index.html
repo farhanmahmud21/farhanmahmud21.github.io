@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
 </head>
 <body>
     <div id="loader"><div class="loader-content"><div class="loader-spinner"></div><p>Loading...</p></div></div>
@@ -181,13 +182,13 @@
                         <button class="carousel-btn carousel-next" onclick="moveCarousel('ilynkCarousel', 1)"><i class="fas fa-chevron-right"></i></button>
                         <div class="carousel-dots" id="ilynkDots"></div>
                     </div>
-                    <div class="project-overlay"><div class="project-links"><a href="https://github.com/farhanmahmud21" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a></div></div>
                 </div>
                 <div class="project-info">
                     <div class="project-featured-badge"><i class="fas fa-star"></i> Featured Project</div>
                     <h3 class="project-title">ILYNK</h3>
                     <p class="project-description">Developed a full-featured dual-role marketplace connecting service providers and product sellers with clients. Implemented secure user authentication and integrated Stripe API (Connect) for secure transactions, automated commissions, and real-time payouts. Built and deployed Firebase Cloud Functions to handle complex server-side logic and utilized GetX for efficient state management.</p>
                     <div class="project-tech"><span>Flutter</span><span>Firebase</span><span>Stripe API</span><span>GetX</span><span>Cloud Functions</span></div>
+                    <div class="project-actions"><span class="private-badge"><i class="fas fa-lock"></i> Private Project</span></div>
                 </div>
             </div>
             <div class="project-card" data-category="flutter api">
@@ -204,12 +205,12 @@
                         <button class="carousel-btn carousel-next" onclick="moveCarousel('lmsCarousel', 1)"><i class="fas fa-chevron-right"></i></button>
                         <div class="carousel-dots" id="lmsDots"></div>
                     </div>
-                    <div class="project-overlay"><div class="project-links"><a href="https://github.com/farhanmahmud21" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a></div></div>
                 </div>
                 <div class="project-info">
                     <h3 class="project-title">Ovipray LMS</h3>
                     <p class="project-description">A comprehensive Learning Management System mobile app built with Flutter and REST API integration. Features course listing, enrollment, video lesson modules with dynamic backend data, and structured state management for scalable code.</p>
                     <div class="project-tech"><span>Flutter</span><span>REST API</span><span>GetX</span><span>LMS</span><span>Video Player</span></div>
+                    <div class="project-actions"><span class="private-badge"><i class="fas fa-lock"></i> Private Project</span></div>
                 </div>
             </div>
             <div class="project-card" data-category="flutter api">
@@ -225,12 +226,12 @@
                         <button class="carousel-btn carousel-next" onclick="moveCarousel('craftyCarousel', 1)"><i class="fas fa-chevron-right"></i></button>
                         <div class="carousel-dots" id="craftyDots"></div>
                     </div>
-                    <div class="project-overlay"><div class="project-links"><a href="https://github.com/farhanmahmud21/craftybay" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a></div></div>
                 </div>
                 <div class="project-info">
                     <h3 class="project-title">CraftyBay</h3>
                     <p class="project-description">Engineered a comprehensive e-commerce application featuring product categorization, cart management, and a secure checkout process. Implemented a robust state management system using GetX to handle dynamic product data, user profiles, and cart states efficiently. Integrated RESTful APIs to fetch real-time product listings and slider content, ensuring a seamless and responsive shopping experience.</p>
                     <div class="project-tech"><span>Flutter</span><span>REST API</span><span>GetX</span><span>SharedPreference</span><span>Logger</span><span>Http</span></div>
+                    <div class="project-actions"><a href="https://github.com/farhanmahmud21/craftybay" target="_blank" class="github-btn"><i class="fab fa-github"></i> View Code</a></div>
                 </div>
             </div>
             <div class="project-card" data-category="flutter">
@@ -248,23 +249,23 @@
                         <button class="carousel-btn carousel-next" onclick="moveCarousel('taskCarousel', 1)"><i class="fas fa-chevron-right"></i></button>
                         <div class="carousel-dots" id="taskDots"></div>
                     </div>
-                    <div class="project-overlay"><div class="project-links"><a href="https://github.com/farhanmahmud21/task_management_demo" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a></div></div>
                 </div>
                 <div class="project-info">
                     <h3 class="project-title">Task Management App</h3>
                     <p class="project-description">A Flutter-based task management application with features for creating, organizing, and tracking tasks. Clean UI with efficient state management.</p>
                     <div class="project-tech"><span>Flutter</span><span>Dart</span><span>State Management</span></div>
+                    <div class="project-actions"><a href="https://github.com/farhanmahmud21/task_management_demo" target="_blank" class="github-btn"><i class="fab fa-github"></i> View Code</a></div>
                 </div>
             </div>
             <div class="project-card" data-category="flutter">
                 <div class="project-image">
                     <div class="project-screenshots"><img src="https://raw.githubusercontent.com/farhanmahmud21/water_tracker_app/main/image.png" alt="Water Tracker App" onerror="this.parentElement.innerHTML='<div class=project-placeholder><i class=fas fa-tint></i><span>Water Tracker</span></div>'"></div>
-                    <div class="project-overlay"><div class="project-links"><a href="https://github.com/farhanmahmud21/water_tracker_app" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a></div></div>
                 </div>
                 <div class="project-info">
                     <h3 class="project-title">Water Tracker App</h3>
                     <p class="project-description">A health-focused Flutter application to help users track their daily water intake with visual progress indicators and reminders.</p>
                     <div class="project-tech"><span>Flutter</span><span>Dart</span><span>Local Storage</span></div>
+                    <div class="project-actions"><a href="https://github.com/farhanmahmud21/water_tracker_app" target="_blank" class="github-btn"><i class="fab fa-github"></i> View Code</a></div>
                 </div>
             </div>
             <div class="project-card" data-category="flutter">
@@ -278,12 +279,12 @@
                         <button class="carousel-btn carousel-next" onclick="moveCarousel('todoCarousel', 1)"><i class="fas fa-chevron-right"></i></button>
                         <div class="carousel-dots" id="todoDots"></div>
                     </div>
-                    <div class="project-overlay"><div class="project-links"><a href="https://github.com/farhanmahmud21/todo_app-hive-" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a></div></div>
                 </div>
                 <div class="project-info">
                     <h3 class="project-title">Todo App (Hive)</h3>
                     <p class="project-description">A Flutter todo application using Hive local database for offline data persistence. Features task creation, completion tracking, and a clean Material Design UI with smooth animations.</p>
                     <div class="project-tech"><span>Flutter</span><span>Dart</span><span>Hive</span><span>Local Database</span></div>
+                    <div class="project-actions"><a href="https://github.com/farhanmahmud21/todo_app-hive-" target="_blank" class="github-btn"><i class="fab fa-github"></i> View Code</a></div>
                 </div>
             </div>
             <div class="project-card" data-category="flutter">
@@ -297,12 +298,12 @@
                         <button class="carousel-btn carousel-next" onclick="moveCarousel('bmiCarousel', 1)"><i class="fas fa-chevron-right"></i></button>
                         <div class="carousel-dots" id="bmiDots"></div>
                     </div>
-                    <div class="project-overlay"><div class="project-links"><a href="https://github.com/farhanmahmud21/bmi_calculator" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a></div></div>
                 </div>
                 <div class="project-info">
                     <h3 class="project-title">BMI Calculator</h3>
                     <p class="project-description">A clean and intuitive BMI calculator app built with Flutter. Calculates Body Mass Index with visual health category indicators and recommendations.</p>
                     <div class="project-tech"><span>Flutter</span><span>Dart</span><span>Material Design</span></div>
+                    <div class="project-actions"><a href="https://github.com/farhanmahmud21/bmi_calculator" target="_blank" class="github-btn"><i class="fab fa-github"></i> View Code</a></div>
                 </div>
             </div>
             <div class="project-card" data-category="flutter api">
@@ -316,12 +317,12 @@
                         <button class="carousel-btn carousel-next" onclick="moveCarousel('weatherCarousel', 1)"><i class="fas fa-chevron-right"></i></button>
                         <div class="carousel-dots" id="weatherDots"></div>
                     </div>
-                    <div class="project-overlay"><div class="project-links"><a href="https://github.com/farhanmahmud21/weather_app" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a></div></div>
                 </div>
                 <div class="project-info">
                     <h3 class="project-title">Weather App</h3>
                     <p class="project-description">Real-time weather application that fetches current weather data using REST APIs. Features location-based forecasts with a beautiful, dynamic UI.</p>
                     <div class="project-tech"><span>Flutter</span><span>REST API</span><span>Dart</span><span>Geolocation</span></div>
+                    <div class="project-actions"><a href="https://github.com/farhanmahmud21/weather_app" target="_blank" class="github-btn"><i class="fab fa-github"></i> View Code</a></div>
                 </div>
             </div>
         </div>
@@ -393,6 +394,7 @@
         <p class="footer-copyright">&copy; 2026 Farhan Mahmud. All rights reserved. | Built with <i class="fas fa-heart" style="color: #ef4444"></i></p>
     </div></div></footer>
     <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

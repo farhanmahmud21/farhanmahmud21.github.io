@@ -1,4 +1,17 @@
-﻿// ===== Loader =====
+﻿// ===== Lenis Smooth Scroll =====
+const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    orientation: 'vertical',
+    gestureOrientation: 'vertical',
+    smoothWheel: true,
+    wheelMultiplier: 1,
+    touchMultiplier: 2,
+});
+function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+requestAnimationFrame(raf);
+
+// ===== Loader =====
 window.addEventListener('load', () => {
     setTimeout(() => document.getElementById('loader').classList.add('hidden'), 600);
 });
@@ -123,12 +136,12 @@ contactForm.addEventListener('submit', (e) => {
     setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; contactForm.reset(); }, 3000);
 });
 
-// ===== Smooth Anchor Scroll =====
+// ===== Smooth Anchor Scroll (Lenis) =====
 document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', function(e) {
         e.preventDefault();
         const t = document.querySelector(this.getAttribute('href'));
-        if (t) t.scrollIntoView({ behavior:'smooth' });
+        if (t) lenis.scrollTo(t, { offset: -80 });
     });
 });
 // ===== Parallax Mouse Effect =====
