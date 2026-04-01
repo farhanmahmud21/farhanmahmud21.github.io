@@ -269,6 +269,25 @@
             </div>
             <div class="project-card" data-category="flutter">
                 <div class="project-image carousel-container">
+                    <div class="phone-carousel" id="todoCarousel">
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/todo_app-hive-/main/image.png" alt="Todo App 1"></div>
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/todo_app-hive-/main/image-1.png" alt="Todo App 2"></div>
+                        </div>
+                        <button class="carousel-btn carousel-prev" onclick="moveCarousel('todoCarousel', -1)"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-btn carousel-next" onclick="moveCarousel('todoCarousel', 1)"><i class="fas fa-chevron-right"></i></button>
+                        <div class="carousel-dots" id="todoDots"></div>
+                    </div>
+                    <div class="project-overlay"><div class="project-links"><a href="https://github.com/farhanmahmud21/todo_app-hive-" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a></div></div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Todo App (Hive)</h3>
+                    <p class="project-description">A Flutter todo application using Hive local database for offline data persistence. Features task creation, completion tracking, and a clean Material Design UI with smooth animations.</p>
+                    <div class="project-tech"><span>Flutter</span><span>Dart</span><span>Hive</span><span>Local Database</span></div>
+                </div>
+            </div>
+            <div class="project-card" data-category="flutter">
+                <div class="project-image carousel-container">
                     <div class="phone-carousel" id="bmiCarousel">
                         <div class="carousel-track">
                             <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/bmi_calculator/main/image.png" alt="BMI Calculator 1"></div>
