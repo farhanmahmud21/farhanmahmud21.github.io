@@ -167,12 +167,19 @@ h1,h2,h3,h4,h5,h6 { font-family:var(--font-display); letter-spacing:-0.02em; }
     object-fit:contain;
     flex-shrink:0;
 }
-/* Black / low-contrast devicons on dark UI → readable */
-.skill-tag img[src*="github/github-original"] {
+/* Black devicons on dark UI — class-based so filters always apply */
+.skill-tag img.skill-icon-invert {
+    -webkit-filter: brightness(0) invert(1);
     filter: brightness(0) invert(1);
 }
-.skill-tag img[src*="express/express-original"] {
-    filter: brightness(0) invert(1);
+/* GitHub: Font Awesome avoids invisible black SVG on dark background */
+.skill-tag .skill-icon-fa-github {
+    font-size: 15px;
+    width: 16px;
+    text-align: center;
+    flex-shrink: 0;
+    line-height: 1;
+    color: currentColor;
 }
 /* Dark-filled tool icons: lift without killing brand colors */
 .skill-tag img[src*="androidstudio/androidstudio-original"] {
