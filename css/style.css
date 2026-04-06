@@ -161,7 +161,29 @@ h1,h2,h3,h4,h5,h6 { font-family:var(--font-display); letter-spacing:-0.02em; }
 .skill-tags { display:flex; flex-wrap:wrap; gap:8px; }
 .skill-tag { display:inline-flex; align-items:center; gap:7px; padding:7px 14px; background:rgba(255,255,255,0.015); border:1px solid var(--border); border-radius:8px; font-size:12.5px; font-weight:500; color:var(--text-secondary); transition:var(--transition); }
 .skill-tag:hover { border-color:rgba(99,102,241,0.25); color:var(--primary-light); background:rgba(99,102,241,0.04); transform:translateY(-1px); }
-.skill-tag img { width:16px; height:16px; }
+.skill-tag img {
+    width:16px;
+    height:16px;
+    object-fit:contain;
+    flex-shrink:0;
+}
+/* Black / low-contrast devicons on dark UI → readable */
+.skill-tag img[src*="github/github-original"] {
+    filter: brightness(0) invert(1);
+}
+.skill-tag img[src*="express/express-original"] {
+    filter: brightness(0) invert(1);
+}
+/* Dark-filled tool icons: lift without killing brand colors */
+.skill-tag img[src*="androidstudio/androidstudio-original"] {
+    filter: brightness(1.5) contrast(1.08) saturate(1.12);
+}
+.skill-tag img[src*="vscode/vscode-original"] {
+    filter: brightness(1.25) saturate(1.05);
+}
+.hero-orbit .orbit-item img {
+    object-fit:contain;
+}
 
 /* ===== Timeline ===== */
 .experience { background:var(--bg-surface); }
