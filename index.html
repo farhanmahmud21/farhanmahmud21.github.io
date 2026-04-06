@@ -66,7 +66,7 @@
                 <p class="about-text">I was honored to be the <strong>Champion</strong> of the <strong>MillionX Bangladesh National AI Innovation Hackathon 2025</strong> in the EdTech category, which reflects my commitment to leveraging technology for meaningful impact.</p>
                 <div class="about-stats">
                     <div class="stat-card"><span class="stat-number" data-count="1">0</span><span class="stat-plus">+</span><span class="stat-label">Year Experience</span></div>
-                    <div class="stat-card"><span class="stat-number" data-count="6">0</span><span class="stat-plus">+</span><span class="stat-label">Projects Built</span></div>
+                    <div class="stat-card"><span class="stat-number" data-count="7">0</span><span class="stat-plus">+</span><span class="stat-label">Projects Built</span></div>
                     <div class="stat-card"><span class="stat-number" data-count="2">0</span><span class="stat-label">Companies</span></div>
                     <div class="stat-card trophy-card"><i class="fas fa-trophy"></i><span class="stat-label">Hackathon Champion</span></div>
                 </div>
@@ -162,6 +162,7 @@
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="flutter">Flutter</button>
             <button class="filter-btn" data-filter="api">REST API</button>
+            <button class="filter-btn" data-filter="express">Express.js</button>
             <button class="filter-btn" data-filter="firebase">Firebase</button>
         </div>
         <div class="projects-grid">
@@ -211,6 +212,27 @@
                     <p class="project-description">A comprehensive Learning Management System mobile app built with Flutter and REST API integration. Features course listing, enrollment, video lesson modules with dynamic backend data, and structured state management for scalable code.</p>
                     <div class="project-tech"><span>Flutter</span><span>REST API</span><span>GetX</span><span>LMS</span><span>Video Player</span></div>
                     <div class="project-actions"><span class="private-badge"><i class="fas fa-lock"></i> Private Project</span></div>
+                </div>
+            </div>
+            <div class="project-card" data-category="flutter api express">
+                <div class="project-image carousel-container">
+                    <div class="phone-carousel" id="postfeedCarousel">
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/postfeed_app/main/app%20frontend/postfeed/image.png" alt="PostFeed Feed Screen"></div>
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/postfeed_app/main/app%20frontend/postfeed/image-1.png" alt="PostFeed Create Post"></div>
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/postfeed_app/main/app%20frontend/postfeed/image-2.png" alt="PostFeed Settings"></div>
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/postfeed_app/main/app%20frontend/postfeed/image-3.png" alt="PostFeed Dark Mode"></div>
+                        </div>
+                        <button class="carousel-btn carousel-prev" onclick="moveCarousel('postfeedCarousel', -1)"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-btn carousel-next" onclick="moveCarousel('postfeedCarousel', 1)"><i class="fas fa-chevron-right"></i></button>
+                        <div class="carousel-dots" id="postfeedDots"></div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">PostFeed App</h3>
+                    <p class="project-description">A full-stack social post feed application with Flutter frontend and Node.js/Express backend. Features image uploading via ImageKit cloud storage, CRUD operations for posts, dark/light theme toggle with persistence, and a clean card-based feed UI with pull-to-refresh. Backend uses MongoDB for data persistence with RESTful API endpoints.</p>
+                    <div class="project-tech"><span>Flutter</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>REST API</span><span>ImageKit</span></div>
+                    <div class="project-actions"><a href="https://github.com/farhanmahmud21/postfeed_app" target="_blank" class="github-btn"><i class="fab fa-github"></i> View Code</a></div>
                 </div>
             </div>
             <div class="project-card" data-category="flutter api">
