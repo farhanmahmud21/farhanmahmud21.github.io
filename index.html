@@ -66,7 +66,7 @@
                 <p class="about-text">I was honored to be the <strong>Champion</strong> of the <strong>MillionX Bangladesh National AI Innovation Hackathon 2025</strong> in the EdTech category, which reflects my commitment to leveraging technology for meaningful impact.</p>
                 <div class="about-stats">
                     <div class="stat-card"><span class="stat-number" data-count="1">0</span><span class="stat-plus">+</span><span class="stat-label">Year Experience</span></div>
-                    <div class="stat-card"><span class="stat-number" data-count="7">0</span><span class="stat-plus">+</span><span class="stat-label">Projects Built</span></div>
+                    <div class="stat-card"><span class="stat-number" data-count="8">0</span><span class="stat-plus">+</span><span class="stat-label">Projects Built</span></div>
                     <div class="stat-card"><span class="stat-number" data-count="2">0</span><span class="stat-label">Companies</span></div>
                     <div class="stat-card trophy-card"><i class="fas fa-trophy"></i><span class="stat-label">Hackathon Champion</span></div>
                 </div>
@@ -170,6 +170,34 @@
         <div class="projects-grid">
             <div class="project-card featured-project" data-category="flutter firebase">
                 <div class="project-image carousel-container">
+                    <div class="phone-carousel" id="hospitalCarousel">
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/hospital_management/main/image-2.png" alt="Hospital Management"></div>
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/hospital_management/main/image.png" alt="Hospital Management"></div>
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/hospital_management/main/image-1.png" alt="Hospital Management"></div>
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/hospital_management/main/image-3.png" alt="Hospital Management"></div>
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/hospital_management/main/image-4.png" alt="Hospital Management"></div>
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/hospital_management/main/image-5.png" alt="Hospital Management"></div>
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/hospital_management/main/image-6.png" alt="Hospital Management"></div>
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/hospital_management/main/image-7.png" alt="Hospital Management"></div>
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/hospital_management/main/image-8.png" alt="Hospital Management"></div>
+                            <div class="carousel-slide"><img src="https://raw.githubusercontent.com/farhanmahmud21/hospital_management/main/image-9.png" alt="Hospital Management"></div>
+                        </div>
+                        <button class="carousel-btn carousel-prev" onclick="moveCarousel('hospitalCarousel', -1)"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-btn carousel-next" onclick="moveCarousel('hospitalCarousel', 1)"><i class="fas fa-chevron-right"></i></button>
+                        <div class="carousel-dots" id="hospitalDots"></div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-featured-badge"><i class="fas fa-star"></i> Featured Project</div>
+                    <h3 class="project-title">Hospital Management</h3>
+                    <p class="project-description">A Flutter app for patients to sign in, browse doctors by specialty, book appointments, track medicines and lab test schedules, and chat with an AI health assistant for general wellness questions (not a substitute for professional care). Built with Firebase (Auth, Firestore, Storage) for synced data across devices, Provider for state management, and the Gemini API via HTTP with secrets loaded through flutter_dotenv.</p>
+                    <div class="project-tech"><span>Flutter</span><span>Firebase</span><span>Provider</span><span>Gemini API</span><span>Firestore</span><span>Google Sign-In</span></div>
+                    <div class="project-actions"><a href="https://github.com/farhanmahmud21/hospital_management" target="_blank" class="github-btn"><i class="fab fa-github"></i> View Code</a></div>
+                </div>
+            </div>
+            <div class="project-card" data-category="flutter firebase">
+                <div class="project-image carousel-container">
                     <div class="phone-carousel" id="ilynkCarousel">
                         <div class="carousel-track">
                             <div class="carousel-slide"><img src="images/ilynk/photo_1_2026-04-01_16-38-56.jpg" alt="ILYNK Onboarding"></div>
@@ -187,7 +215,6 @@
                     </div>
                 </div>
                 <div class="project-info">
-                    <div class="project-featured-badge"><i class="fas fa-star"></i> Featured Project</div>
                     <h3 class="project-title">ILYNK</h3>
                     <p class="project-description">Developed a full-featured dual-role marketplace connecting service providers and product sellers with clients. Implemented secure user authentication and integrated Stripe API (Connect) for secure transactions, automated commissions, and real-time payouts. Built and deployed Firebase Cloud Functions to handle complex server-side logic and utilized GetX for efficient state management.</p>
                     <div class="project-tech"><span>Flutter</span><span>Firebase</span><span>Stripe API</span><span>GetX</span><span>Cloud Functions</span></div>
