@@ -168,6 +168,55 @@
             <button class="filter-btn" data-filter="firebase">Firebase</button>
         </div>
         <div class="projects-grid">
+            <div class="project-card featured-project" data-category="flutter api">
+                <div class="project-image carousel-container">
+                    <div class="phone-carousel" id="lmsCarousel">
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="images/ovipray/photo_1_2026-04-01_16-38-33.jpg" alt="Ovipray LMS screen"></div>
+                            <div class="carousel-slide"><img src="images/ovipray/photo_2_2026-04-01_16-38-33.jpg" alt="Ovipray LMS screen"></div>
+                            <div class="carousel-slide"><img src="images/ovipray/photo_3_2026-04-01_16-38-33.jpg" alt="Ovipray LMS screen"></div>
+                            <div class="carousel-slide"><img src="images/ovipray/photo_4_2026-04-01_16-38-33.jpg" alt="Ovipray LMS screen"></div>
+                            <div class="carousel-slide"><img src="images/ovipray/photo_5_2026-04-01_16-38-33.jpg" alt="Ovipray LMS screen"></div>
+                        </div>
+                        <button class="carousel-btn carousel-prev" onclick="moveCarousel('lmsCarousel', -1)"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-btn carousel-next" onclick="moveCarousel('lmsCarousel', 1)"><i class="fas fa-chevron-right"></i></button>
+                        <div class="carousel-dots" id="lmsDots"></div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-featured-badge"><i class="fas fa-star"></i> Featured Project</div>
+                    <h3 class="project-title">Ovipray LMS</h3>
+                    <p class="project-description">A comprehensive Learning Management System mobile app built with Flutter and REST API integration. Features course listing, enrollment, video lesson modules with dynamic backend data, and structured state management for scalable code.</p>
+                    <div class="project-tech"><span>Flutter</span><span>REST API</span><span>GetX</span><span>LMS</span><span>Video Player</span></div>
+                    <div class="project-actions"><span class="private-badge"><i class="fas fa-lock"></i> Private Project</span></div>
+                </div>
+            </div>
+            <div class="project-card featured-project" data-category="flutter firebase">
+                <div class="project-image carousel-container">
+                    <div class="phone-carousel" id="ilynkCarousel">
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="images/ilynk/photo_1_2026-04-01_16-38-56.jpg" alt="ILYNK Onboarding"></div>
+                            <div class="carousel-slide"><img src="images/ilynk/photo_3_2026-04-01_16-38-56.jpg" alt="ILYNK Login Dark"></div>
+                            <div class="carousel-slide"><img src="images/ilynk/photo_4_2026-04-01_16-38-56.jpg" alt="ILYNK Login Light"></div>
+                            <div class="carousel-slide"><img src="images/ilynk/photo_5_2026-04-01_16-38-56.jpg" alt="ILYNK Home"></div>
+                            <div class="carousel-slide"><img src="images/ilynk/photo_6_2026-04-01_16-38-56.jpg" alt="ILYNK Marketplace"></div>
+                            <div class="carousel-slide"><img src="images/ilynk/photo_7_2026-04-01_16-38-56.jpg" alt="ILYNK Categories"></div>
+                            <div class="carousel-slide"><img src="images/ilynk/photo_8_2026-04-01_16-38-56.jpg" alt="ILYNK Profile"></div>
+                            <div class="carousel-slide"><img src="images/ilynk/photo_9_2026-04-01_16-38-56.jpg" alt="ILYNK Features"></div>
+                        </div>
+                        <button class="carousel-btn carousel-prev" onclick="moveCarousel('ilynkCarousel', -1)"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-btn carousel-next" onclick="moveCarousel('ilynkCarousel', 1)"><i class="fas fa-chevron-right"></i></button>
+                        <div class="carousel-dots" id="ilynkDots"></div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-featured-badge"><i class="fas fa-star"></i> Featured Project</div>
+                    <h3 class="project-title">ILYNK</h3>
+                    <p class="project-description">Developed a full-featured dual-role marketplace connecting service providers and product sellers with clients. Implemented secure user authentication and integrated Stripe API (Connect) for secure transactions, automated commissions, and real-time payouts. Built and deployed Firebase Cloud Functions to handle complex server-side logic and utilized GetX for efficient state management.</p>
+                    <div class="project-tech"><span>Flutter</span><span>Firebase</span><span>Stripe API</span><span>GetX</span><span>Cloud Functions</span></div>
+                    <div class="project-actions"><span class="private-badge"><i class="fas fa-lock"></i> Private Project</span></div>
+                </div>
+            </div>
             <div class="project-card featured-project" data-category="flutter firebase">
                 <div class="project-image carousel-container">
                     <div class="phone-carousel" id="hospitalCarousel">
@@ -194,53 +243,6 @@
                     <p class="project-description">A Flutter app for patients to sign in, browse doctors by specialty, book appointments, track medicines and lab test schedules, and chat with an AI health assistant for general wellness questions (not a substitute for professional care). Built with Firebase (Auth, Firestore, Storage) for synced data across devices, Provider for state management, and the Gemini API via HTTP with secrets loaded through flutter_dotenv.</p>
                     <div class="project-tech"><span>Flutter</span><span>Firebase</span><span>Provider</span><span>Gemini API</span><span>Firestore</span><span>Google Sign-In</span></div>
                     <div class="project-actions"><a href="https://github.com/farhanmahmud21/hospital_management" target="_blank" class="github-btn"><i class="fab fa-github"></i> View Code</a></div>
-                </div>
-            </div>
-            <div class="project-card" data-category="flutter firebase">
-                <div class="project-image carousel-container">
-                    <div class="phone-carousel" id="ilynkCarousel">
-                        <div class="carousel-track">
-                            <div class="carousel-slide"><img src="images/ilynk/photo_1_2026-04-01_16-38-56.jpg" alt="ILYNK Onboarding"></div>
-                            <div class="carousel-slide"><img src="images/ilynk/photo_3_2026-04-01_16-38-56.jpg" alt="ILYNK Login Dark"></div>
-                            <div class="carousel-slide"><img src="images/ilynk/photo_4_2026-04-01_16-38-56.jpg" alt="ILYNK Login Light"></div>
-                            <div class="carousel-slide"><img src="images/ilynk/photo_5_2026-04-01_16-38-56.jpg" alt="ILYNK Home"></div>
-                            <div class="carousel-slide"><img src="images/ilynk/photo_6_2026-04-01_16-38-56.jpg" alt="ILYNK Marketplace"></div>
-                            <div class="carousel-slide"><img src="images/ilynk/photo_7_2026-04-01_16-38-56.jpg" alt="ILYNK Categories"></div>
-                            <div class="carousel-slide"><img src="images/ilynk/photo_8_2026-04-01_16-38-56.jpg" alt="ILYNK Profile"></div>
-                            <div class="carousel-slide"><img src="images/ilynk/photo_9_2026-04-01_16-38-56.jpg" alt="ILYNK Features"></div>
-                        </div>
-                        <button class="carousel-btn carousel-prev" onclick="moveCarousel('ilynkCarousel', -1)"><i class="fas fa-chevron-left"></i></button>
-                        <button class="carousel-btn carousel-next" onclick="moveCarousel('ilynkCarousel', 1)"><i class="fas fa-chevron-right"></i></button>
-                        <div class="carousel-dots" id="ilynkDots"></div>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">ILYNK</h3>
-                    <p class="project-description">Developed a full-featured dual-role marketplace connecting service providers and product sellers with clients. Implemented secure user authentication and integrated Stripe API (Connect) for secure transactions, automated commissions, and real-time payouts. Built and deployed Firebase Cloud Functions to handle complex server-side logic and utilized GetX for efficient state management.</p>
-                    <div class="project-tech"><span>Flutter</span><span>Firebase</span><span>Stripe API</span><span>GetX</span><span>Cloud Functions</span></div>
-                    <div class="project-actions"><span class="private-badge"><i class="fas fa-lock"></i> Private Project</span></div>
-                </div>
-            </div>
-            <div class="project-card" data-category="flutter api">
-                <div class="project-image carousel-container">
-                    <div class="phone-carousel" id="lmsCarousel">
-                        <div class="carousel-track">
-                            <div class="carousel-slide"><img src="images/ovipray/photo_1_2026-04-01_16-38-33.jpg" alt="LMS Screen 1"></div>
-                            <div class="carousel-slide"><img src="images/ovipray/photo_2_2026-04-01_16-38-33.jpg" alt="LMS Screen 2"></div>
-                            <div class="carousel-slide"><img src="images/ovipray/photo_3_2026-04-01_16-38-33.jpg" alt="LMS Screen 3"></div>
-                            <div class="carousel-slide"><img src="images/ovipray/photo_4_2026-04-01_16-38-33.jpg" alt="LMS Screen 4"></div>
-                            <div class="carousel-slide"><img src="images/ovipray/photo_5_2026-04-01_16-38-33.jpg" alt="LMS Screen 5"></div>
-                        </div>
-                        <button class="carousel-btn carousel-prev" onclick="moveCarousel('lmsCarousel', -1)"><i class="fas fa-chevron-left"></i></button>
-                        <button class="carousel-btn carousel-next" onclick="moveCarousel('lmsCarousel', 1)"><i class="fas fa-chevron-right"></i></button>
-                        <div class="carousel-dots" id="lmsDots"></div>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">Ovipray LMS</h3>
-                    <p class="project-description">A comprehensive Learning Management System mobile app built with Flutter and REST API integration. Features course listing, enrollment, video lesson modules with dynamic backend data, and structured state management for scalable code.</p>
-                    <div class="project-tech"><span>Flutter</span><span>REST API</span><span>GetX</span><span>LMS</span><span>Video Player</span></div>
-                    <div class="project-actions"><span class="private-badge"><i class="fas fa-lock"></i> Private Project</span></div>
                 </div>
             </div>
             <div class="project-card" data-category="flutter api express">
